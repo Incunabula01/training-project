@@ -16,6 +16,11 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "mixins";
+ 
+$light-grey: #eaeaea;
+
+
 
 /*-- General --*/
  body {
@@ -77,4 +82,19 @@ nav ul li a{
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.debug_dump{
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+.footer{
+  margin: 1em 0;
+  small{
+    padding: 15px 0;
+  }
 }
